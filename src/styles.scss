@@ -1,1 +1,136 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Material+Icons+Outlined|Material+Icons");
+
+html {
+  font-family: "Inter", sans-serif;
+  color: #222;
+
+  overflow: hidden;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+h1.is-bold,
+h2.is-bold {
+  font-weight: bold;
+  letter-spacing: -2px;
+}
+
+.container {
+  max-width: 850px;
+  margin: auto;
+}
+
+.btn {
+  display: inline-flex;
+  color: white;
+  font-size: 18px;
+
+  font-family: inherit;
+  border: none;
+  padding: 12px 22px;
+  background: rgba($color: black, $alpha: 0.7);
+
+  font-weight: 600;
+  border-radius: 4px;
+  align-items: center;
+  cursor: pointer;
+
+  text-decoration: none;
+
+  &:hover {
+    background: rgba($color: black, $alpha: 0.78);
+    backdrop-filter: blur(2px);
+  }
+
+  &:active {
+    background: rgba($color: black, $alpha: 0.85);
+  }
+}
+
+.btns-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+
+  &.btns-centered {
+    justify-content: center;
+  }
+
+  .align-end {
+    margin-left: auto;
+  }
+}
+
+.has-blurred-white-bg {
+  background: rgba($color: white, $alpha: 0.85);
+  backdrop-filter: blur(2px);
+}
+
+.form-field {
+  margin-bottom: 20px;
+
+  label.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: rgba($color: black, $alpha: 0.8);
+  }
+}
+
+.textbox,
+textarea {
+  display: block;
+  font-size: 18px;
+  font-family: inherit;
+
+  background: rgba($color: white, $alpha: 0.9);
+  border: 2px solid rgba($color: black, $alpha: 0.3);
+
+  border-radius: 4px;
+
+  padding: 8px 10px;
+  // margin-bottom: 20px;
+
+  width: 100%;
+
+  &:hover {
+    background: rgba($color: white, $alpha: 0.95);
+  }
+
+  &:focus {
+    background: white;
+    outline: none;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: rgba($color: black, $alpha: 0.42);
+  }
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+a {
+  text-decoration: none;
+}
